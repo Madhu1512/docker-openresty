@@ -1,4 +1,4 @@
-FROM openresty/openresty:alpine-fat
+FROM openresty/openresty:1.11.2.2-alpine-fat
 
 RUN apk add --no-cache openssl-dev git node bash ca-certificates nodejs tar && \
     /usr/local/openresty/luajit/bin/luarocks install lua-resty-openidc && \
