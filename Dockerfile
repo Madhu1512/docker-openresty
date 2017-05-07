@@ -5,4 +5,5 @@ ENV PATH=/usr/local/openresty/luajit/bin:/usr/local/openresty/nginx/sbin:/usr/lo
 
 RUN apk add --no-cache openssl-dev git bash && \
     luarocks install lua-resty-openidc && \
-    luarocks install lua-api-gateway-aws
+    luarocks install lua-api-gateway-aws && \
+    luarocks install lua-messagepack
